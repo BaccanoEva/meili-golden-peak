@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>梅里雪山 · 日照金山预测</title>
+    <style>
+        :root {
+            --bg: #0b1021;
+            --card: #151e32;
+            --card-hover: #1a2540;
+            --text: #f0f4f8;
+            --muted: #8896ab;
+            --accent: #fbbf24;
+            --high: #22c55e;
+            --medium: #f59e0b;
+            --low: #ef4444;
+            --ec: #3b82f6;
+            --icon: #8b5cf6;
+            --success: #10b981;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(180deg, #0b1021 0%, #111827 50%, #0f172a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 680px; margin: 0 auto; padding: 24px 16px 40px; }
+
+        header { text-align: center; padding: 20px 0 24px; position: relative; }
+
+        .mountain-icon {
+            font-size: 48px;
+            line-height: 1;
+            margin-bottom: 12px;
+            filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.3));
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b, #fcd34d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .model-badge {
+            display: inline-flex;
+            gap: 8px;
+            margin-top: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .model-badge span {
+            padding: 3px 10px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .model-badge .ec { color: var(--ec); border-color: rgba(59,130,246,0.2); }
+        .model-badge .icon { color: var(--icon); border-color: rgba(139,92,246,0.2); }
+
+        .header-actions {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+
+        .btn-icon {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .btn-icon:hover { background: rgba(255,255,255,0.12); transform: scale(1.05); }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+        .dot.high { background: var(--high); box-shadow: 0 0 6px var(--high); }
+        .dot.medium { background: var(--medium); box-shadow: 0 0 6px var(--medium); }
+        .dot.low { background: var(--low); box-shadow: 0 0 6px var(--low); }
+
+        .status-bar {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .spinner {
+            width: 28px; height: 28px;
+            border: 3px solid rgba(255,255,255,0.1);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 12px;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .error { color: var(--low); text-align: center; padding: 40px 20px; }
+        .error button {
+            margin-top: 16px;
+            background: var(--card);
+            border: 1px solid rgba(239,68,68,0.3);
+            color: var(--text);
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .card-list { display: flex; flex-direction: column; gap: 12px; }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 18px 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            border: 1px solid rgba(255,255,255,0.04);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 3px;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+
+        .card:hover { transform: translateY(-2px); background: var(--card-hover); }
+        .card:active { transform: scale(0.99); }
+
+        .card.today {
+            background: linear-gradient(135deg, #151e32 0%, #1f1410 100%);
+            border-color: rgba(251, 191, 36, 0.15);
+        }
+        .card.today::before { opacity: 1; background: var(--accent); }
+
+        .card.prob-high::before { opacity: 1; background: var(--high); }
+        .card.prob-medium::before { opacity: 1; background: var(--medium); }
+        .card.prob-low::before { opacity: 1; background: var(--low); }
+
+        .feedback-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .feedback-badge.seen {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--success);
+        }
+
+        .feedback-badge.missed {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--low);
+        }
+
+        .date-box {
+            text-align: center;
+            min-width: 52px;
+            margin-top: 4px;
+        }
+
+        .weekday {
+            font-size: 11px;
+            color: var(--muted);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .date-str {
+            font-size: 17px;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        .prob-ring {
+            width: 62px; height: 62px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 17px;
+            flex-shrink: 0;
+            position: relative;
+            background: conic-gradient(var(--ring-color) var(--ring-deg), rgba(255,255,255,0.06) 0);
+            margin-top: 4px;
+        }
+
+        .prob-ring::after {
+            content: '';
+            position: absolute;
+            inset: 4px;
+            background: var(--card);
+            border-radius: 50%;
+        }
+
+        .prob-ring span { position: relative; z-index: 1; }
+
+        .info { flex: 1; min-width: 0; padding-top: 2px; }
+
+        .advice {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            line-height: 1.3;
+            padding-right: 50px;
+        }
+
+        .model-split {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 6px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .model-split .ec { color: var(--ec); }
+        .model-split .icon { color: var(--icon); }
+
+        .meta {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        .tags {
+            display: flex;
+            gap: 6px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.05);
+            color: var(--muted);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .tag.highlight {
+            background: rgba(251, 191, 36, 0.12);
+            color: var(--accent);
+            border-color: rgba(251, 191, 36, 0.2);
+        }
+
+        .tag.consensus {
+            background: rgba(34, 197, 94, 0.12);
+            color: var(--high);
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+
+        .tag.divergence {
+            background: rgba(239, 68, 68, 0.12);
+            color: var(--low);
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        .feedback-bar {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .btn-feedback {
+            flex: 1;
+            padding: 6px 0;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.03);
+            color: var(--muted);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .btn-feedback:hover { background: rgba(255,255,255,0.08); color: var(--text); }
+        .btn-feedback.active-yes { background: rgba(16,185,129,0.15); color: var(--success); border-color: rgba(16,185,129,0.3); }
+        .btn-feedback.active-no { background: rgba(239,68,68,0.15); color: var(--low); border-color: rgba(239,68,68,0.3); }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px 0;
+            font-size: 11px;
+            color: rgba(136, 150, 171, 0.6);
+        }
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            padding: 20px;
+        }
+
+        .modal-overlay.active { display: flex; }
+
+        .modal {
+            background: var(--card);
+            border-radius: 20px;
+            padding: 24px;
+            width: 100%;
+            max-width: 420px;
+            border: 1px solid rgba(255,255,255,0.06);
+            animation: modalIn 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        @keyframes modalIn {
+            from { opacity: 0; transform: translateY(20px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-title { font-size: 18px; font-weight: 700; }
+        .modal-close {
+            background: none; border: none; color: var(--muted);
+            font-size: 22px; cursor: pointer; padding: 0; width: 32px; height: 32px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%;
+        }
+        .modal-close:hover { background: rgba(255,255,255,0.05); color: var(--text); }
+
+        .compare-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .compare-model {
+            text-align: center;
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.03);
+        }
+
+        .compare-model .name {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        .compare-model .prob {
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .compare-model.ec .prob { color: var(--ec); }
+        .compare-model.icon .prob { color: var(--icon); }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .detail-item {
+            background: rgba(255,255,255,0.03);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .detail-label {
+            font-size: 10px;
+            color: var(--muted);
+            margin-bottom: 3px;
+        }
+
+        .detail-value {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .detail-desc {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 14px;
+            line-height: 1.6;
+            padding: 12px;
+            background: rgba(255,255,255,0.02);
+            border-radius: 10px;
+        }
+
+        .consensus-bar {
+            margin: 16px 0 12px;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .consensus-bar.high { background: rgba(34,197,94,0.1); color: var(--high); }
+        .consensus-bar.medium { background: rgba(234,179,8,0.1); color: var(--medium); }
+        .consensus-bar.low { background: rgba(239,68,68,0.1); color: var(--low); }
+
+        .stat-big {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 16px;
+            margin-bottom: 16px;
+        }
+
+        .stat-big .number {
+            font-size: 48px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-big .label {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        .stat-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .stat-box {
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            padding: 14px 8px;
+            text-align: center;
+        }
+
+        .stat-box .num {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .stat-box .lbl {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .stat-box .sub {
+            font-size: 10px;
+            color: var(--muted);
+            margin-top: 4px;
+            opacity: 0.7;
+        }
+
+        .stat-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.06);
+            margin: 16px 0;
+        }
+
+        .stat-section-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--muted);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .model-compare-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .model-compare-bar .name {
+            font-size: 12px;
+            width: 70px;
+            color: var(--muted);
+        }
+
+        .model-compare-bar .bar-wrap {
+            flex: 1;
+            height: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .model-compare-bar .bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.6s ease;
+        }
+
+        .model-compare-bar .val {
+            font-size: 12px;
+            width: 40px;
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .record-list {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 12px;
+        }
+
+        .record-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.02);
+            margin-bottom: 6px;
+            font-size: 12px;
+        }
+
+        .record-item .date { color: var(--muted); min-width: 70px; }
+        .record-item .pred { flex: 1; text-align: center; }
+        .record-item .actual { font-weight: 600; }
+        .record-item .actual.yes { color: var(--success); }
+        .record-item .actual.no { color: var(--low); }
+        .record-item.correct { border-left: 2px solid var(--high); }
+        .record-item.wrong { border-left: 2px solid var(--low); }
+
+        @media (max-width: 400px) {
+            .card { padding: 16px 12px; gap: 10px; }
+            .prob-ring { width: 54px; height: 54px; font-size: 15px; }
+            h1 { font-size: 22px; }
+            .compare-header { gap: 8px; }
+            .header-actions { position: static; margin-top: 12px; }
+            .header-actions .btn-icon { margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="mountain-icon">🏔️</div>
+            <h1>梅里雪山</h1>
+            <p class="subtitle">日照金山概率预测 · 飞来寺观景台</p>
+            <div class="model-badge">
+                <span class="ec">● ECMWF 欧洲模型</span>
+                <span class="icon">● ICON 德国模型</span>
+            </div>
+            <div class="legend">
+                <span class="legend-item"><span class="dot high"></span>高概率 (>80%)</span>
+                <span class="legend-item"><span class="dot medium"></span>中等 (40-80%)</span>
+                <span class="legend-item"><span class="dot low"></span>低概率 (<40%)</span>
+            </div>
+            <div class="header-actions">
+                <button class="btn-icon" onclick="showStats()" title="统计">📊</button>
+            </div>
+        </header>
+
+        <div id="status" class="status-bar">
+            <div class="spinner"></div>
+            <div>正在从后端加载 ECMWF + ICON 双模型数据...</div>
+        </div>
+
+        <div id="forecast-list" class="card-list" style="display:none;"></div>
+
+        <footer>
+            <p>数据来源：Open-Meteo ECMWF + ICON 双模型 · 仅供摄影行程参考</p>
+        </footer>
+    </div>
+
+    <!-- Detail Modal -->
+    <div id="modal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title" id="modal-title">详细数据</div>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="compare-header">
+                <div class="compare-model ec">
+                    <div class="name">ECMWF</div>
+                    <div class="prob" id="modal-ec-prob">--</div>
+                </div>
+                <div class="compare-model icon">
+                    <div class="name">ICON</div>
+                    <div class="prob" id="modal-icon-prob">--</div>
+                </div>
+            </div>
+            <div class="consensus-bar" id="modal-consensus"></div>
+            <div class="detail-grid" id="modal-content"></div>
+            <p class="detail-desc" id="modal-desc"></p>
+            <div id="modal-feedback" style="margin-top:16px;"></div>
+        </div>
+    </div>
+
+    <!-- Stats Modal -->
+    <div id="stats-modal" class="modal-overlay" onclick="closeStatsModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title">📊 预测准确率统计</div>
+                <button class="modal-close" onclick="closeStatsModal()">&times;</button>
+            </div>
+            <div id="stats-content"></div>
+        </div>
+    </div>
+
+    <script>
+        const STORAGE_KEY = 'meili_feedback_v2';
+        let currentForecast = [];
+        let feedbackMap = {};
+
+        // ====== Feedback System ======
+
+        function loadFeedback() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                feedbackMap = raw ? JSON.parse(raw) : {};
+            } catch {
+                feedbackMap = {};
+            }
+        }
+
+        function saveFeedback() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(feedbackMap));
+        }
+
+        function submitFeedback(date, actual) {
+            const day = currentForecast.find(d => d.date === date);
+            if (!day) return;
+
+            feedbackMap[date] = {
+                date,
+                predicted: day.probability,
+                ecPredicted: day.ecProbability,
+                iconPredicted: day.iconProbability,
+                actual,
+                timestamp: Date.now()
+            };
+            saveFeedback();
+            renderList(currentForecast);
+            if (document.getElementById('modal').classList.contains('active')) {
+                const d = currentForecast.find(x => x.date === date);
+                if (d) renderModalFeedback(d);
+            }
+        }
+
+        function isFeedbackEligible(dateStr) {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const d = new Date(dateStr + "T00:00:00");
+            return d <= today;
+        }
+
+        function getFeedbackFor(dateStr) {
+            return feedbackMap[dateStr] || null;
+        }
+
+        function calculateStats() {
+            const records = Object.values(feedbackMap);
+            const total = records.length;
+            if (total === 0) return null;
+
+            const isCorrect = r => (r.predicted >= 50 && r.actual) || (r.predicted < 50 && !r.actual);
+
+            const correct = records.filter(isCorrect).length;
+            const accuracy = Math.round(correct / total * 100);
+
+            const highPred = records.filter(r => r.predicted > 80);
+            const highHit = highPred.filter(r => r.actual).length;
+            const highAcc = highPred.length ? Math.round(highHit / highPred.length * 100) : null;
+
+            const midPred = records.filter(r => r.predicted >= 40 && r.predicted <= 80);
+            const midHit = midPred.filter(r => r.actual).length;
+            const midAcc = midPred.length ? Math.round(midHit / midPred.length * 100) : null;
+
+            const lowPred = records.filter(r => r.predicted < 40);
+            const lowMiss = lowPred.filter(r => !r.actual).length;
+            const lowAcc = lowPred.length ? Math.round(lowMiss / lowPred.length * 100) : null;
+
+            const ecCorrect = records.filter(r =>
+                (r.ecPredicted >= 50 && r.actual) || (r.ecPredicted < 50 && !r.actual)
+            ).length;
+            const ecAcc = Math.round(ecCorrect / total * 100);
+
+            const iconCorrect = records.filter(r =>
+                (r.iconPredicted >= 50 && r.actual) || (r.iconPredicted < 50 && !r.actual)
+            ).length;
+            const iconAcc = Math.round(iconCorrect / total * 100);
+
+            const consensus = records.filter(r => Math.abs(r.ecPredicted - r.iconPredicted) < 20);
+            const consensusCorrect = consensus.filter(isCorrect).length;
+            const consensusAcc = consensus.length ? Math.round(consensusCorrect / consensus.length * 100) : null;
+
+            return { total, accuracy, highAcc, midAcc, lowAcc, ecAcc, iconAcc, consensusAcc, records };
+        }
+
+        // ====== UI Helpers ======
+
+        function getRingColor(prob) {
+            if (prob >= 80) return 'var(--high)';
+            if (prob >= 40) return 'var(--medium)';
+            return 'var(--low)';
+        }
+
+        function getProbClass(prob) {
+            if (prob >= 80) return 'prob-high';
+            if (prob >= 40) return 'prob-medium';
+            return 'prob-low';
+        }
+
+        function getLevel(prob) {
+            if (prob >= 80) return 'high';
+            if (prob >= 40) return 'medium';
+            return 'low';
+        }
+
+        async function fetchForecast() {
+            const res = await fetch('/api/forecast');
+            if (!res.ok) throw new Error('后端服务暂时不可用');
+            const data = await res.json();
+            return data.forecast;
+        }
+
+        function renderFeedbackButtons(day) {
+            if (!isFeedbackEligible(day.date)) return '';
+            const fb = getFeedbackFor(day.date);
+            const yesCls = fb && fb.actual ? 'active-yes' : '';
+            const noCls = fb && !fb.actual ? 'active-no' : '';
+            return `
+                <div class="feedback-bar">
+                    <button class="btn-feedback ${yesCls}" onclick="event.stopPropagation(); submitFeedback('${day.date}', true)">
+                        👍 拍到了
+                    </button>
+                    <button class="btn-feedback ${noCls}" onclick="event.stopPropagation(); submitFeedback('${day.date}', false)">
+                        👎 没看到
+                    </button>
+                </div>
+            `;
+        }
+
+        function renderFeedbackBadge(day) {
+            const fb = getFeedbackFor(day.date);
+            if (!fb) return '';
+            const cls = fb.actual ? 'seen' : 'missed';
+            const txt = fb.actual ? '✓ 已验证·拍到' : '✗ 已验证·未拍';
+            return `<div class="feedback-badge ${cls}">${txt}</div>`;
+        }
+
+        function renderList(forecast) {
+            currentForecast = forecast;
+            const status = document.getElementById("status");
+            const list = document.getElementById("forecast-list");
+            status.style.display = "none";
+            list.style.display = "flex";
+            list.innerHTML = "";
+
+            forecast.forEach((day, idx) => {
+                const card = document.createElement("div");
+                card.className = `card ${idx === 0 ? 'today' : ''} ${getProbClass(day.probability)}`;
+                card.style.setProperty("--ring-color", getRingColor(day.probability));
+                card.style.setProperty("--ring-deg", `${day.probability * 3.6}deg`);
+                card.onclick = () => showDetail(day);
+
+                const tagsHtml = day.tags.map(t => {
+                    let cls = 'tag';
+                    if (t.highlight) cls += ' highlight';
+                    if (t.consensus) cls += ' consensus';
+                    if (t.divergence) cls += ' divergence';
+                    return `<span class="${cls}">${t.text}</span>`;
+                }).join("");
+
+                const feedbackBadge = renderFeedbackBadge(day);
+                const feedbackBtns = renderFeedbackButtons(day);
+
+                card.innerHTML = `
+                    <div class="date-box">
+                        <div class="weekday">${day.weekday}</div>
+                        <div class="date-str">${day.date.slice(5)}</div>
+                    </div>
+                    <div class="prob-ring">
+                        <span style="color:${getRingColor(day.probability)}">${day.probability}%</span>
+                    </div>
+                    <div class="info">
+                        ${feedbackBadge}
+                        <div class="advice">${day.advice}</div>
+                        <div class="model-split">
+                            <span class="ec">EC ${day.ecProbability}%</span>
+                            <span>/</span>
+                            <span class="icon">ICON ${day.iconProbability}%</span>
+                            ${day.confidence >= 80 ? '<span style="margin-left:auto;color:var(--high);">✓ 一致</span>' : 
+                              day.confidence < 60 ? '<span style="margin-left:auto;color:var(--low);">⚠ 分歧</span>' : 
+                              '<span style="margin-left:auto;color:var(--medium);">~ 接近</span>'}
+                        </div>
+                        <div class="meta">
+                            日出 ${day.sunrise} · 高云 EC${day.ec?.details?.cloudcover_high ?? '--'}% / ICON${day.icon?.details?.cloudcover_high ?? '--'}%
+                        </div>
+                        <div class="tags">${tagsHtml}</div>
+                        ${feedbackBtns}
+                    </div>
+                `;
+                list.appendChild(card);
+            });
+        }
+
+        function renderModalFeedback(day) {
+            const el = document.getElementById("modal-feedback");
+            if (!isFeedbackEligible(day.date)) {
+                el.innerHTML = '';
+                return;
+            }
+            const fb = getFeedbackFor(day.date);
+            const yesCls = fb && fb.actual ? 'active-yes' : '';
+            const noCls = fb && !fb.actual ? 'active-no' : '';
+            el.innerHTML = `
+                <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">今天实际拍到了吗？</div>
+                <div class="feedback-bar" style="margin-top:0;">
+                    <button class="btn-feedback ${yesCls}" onclick="submitFeedback('${day.date}', true)">👍 拍到了日照金山</button>
+                    <button class="btn-feedback ${noCls}" onclick="submitFeedback('${day.date}', false)">👎 没有出现</button>
+                </div>
+            `;
+        }
+
+        function showDetail(day) {
+            document.getElementById("modal-title").textContent = `${day.date} ${day.weekday} 双模型对比`;
+            document.getElementById("modal-ec-prob").textContent = day.ecProbability + "%";
+            document.getElementById("modal-icon-prob").textContent = day.iconProbability + "%";
+
+            const con = document.getElementById("modal-consensus");
+            const level = getLevel(day.probability);
+            con.className = `consensus-bar ${level}`;
+
+            if (day.confidence >= 80) {
+                con.textContent = `🔒 双模型高度一致（差异 ${day.diff}%）→ 综合概率 ${day.probability}%`;
+            } else if (day.confidence >= 60) {
+                con.textContent = `~ 两模型存在分歧（差异 ${day.diff}%）→ 综合概率 ${day.probability}%`;
+            } else {
+                con.textContent = `⚠️ 模型分歧较大（差异 ${day.diff}%）→ 建议临近再确认`;
+            }
+
+            const grid = document.getElementById("modal-content");
+            const e = day.ec?.details || {};
+            const i = day.icon?.details || {};
+
+            grid.innerHTML = `
+                <div class="detail-item">
+                    <div class="detail-label">EC 高云</div>
+                    <div class="detail-value" style="color:var(--ec)">${e.cloudcover_high ?? '--'}%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">ICON 高云</div>
+                    <div class="detail-value" style="color:var(--icon)">${i.cloudcover_high ?? '--'}%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">EC 中云</div>
+                    <div class="detail-value" style="color:var(--ec)">${e.cloudcover_mid ?? '--'}%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">ICON 中云</div>
+                    <div class="detail-value" style="color:var(--icon)">${i.cloudcover_mid ?? '--'}%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">EC 低云</div>
+                    <div class="detail-value" style="color:var(--ec)">${e.cloudcover_low ?? '--'}%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">ICON 低云</div>
+                    <div class="detail-value" style="color:var(--icon)">${i.cloudcover_low ?? '--'}%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">EC 降水</div>
+                    <div class="detail-value" style="color:var(--ec)">${e.precipitation ?? '--'} mm</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">ICON 降水</div>
+                    <div class="detail-value" style="color:var(--icon)">${i.precipitation ?? '--'} mm</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">EC 天气</div>
+                    <div class="detail-value" style="color:var(--ec);font-size:12px">${e.weather_desc ?? '未知'}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">ICON 天气</div>
+                    <div class="detail-value" style="color:var(--icon);font-size:12px">${i.weather_desc ?? '未知'}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">EC 湿度</div>
+                    <div class="detail-value" style="color:var(--ec)">${e.relative_humidity_2m ?? '--'}%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">ICON 湿度</div>
+                    <div class="detail-value" style="color:var(--icon)">${i.relative_humidity_2m ?? '--'}%</div>
+                </div>
+            `;
+
+            document.getElementById("modal-desc").textContent =
+                `日出 ${day.sunrise}，日落 ${day.sunset}。ECMWF（欧洲模型）与 ICON（德国模型）分别基于不同的物理参数化方案计算。当两模型一致看好时，预测可信度最高；若分歧较大，说明天气系统处于过渡期，建议临近再确认。`;
+
+            renderModalFeedback(day);
+            document.getElementById("modal").classList.add("active");
+        }
+
+        function closeModal(e) {
+            if (!e || e.target.id === "modal") {
+                document.getElementById("modal").classList.remove("active");
+            }
+        }
+
+        // ====== Stats Modal ======
+
+        function showStats() {
+            const stats = calculateStats();
+            const el = document.getElementById("stats-content");
+
+            if (!stats) {
+                el.innerHTML = `
+                    <div style="text-align:center;padding:40px 20px;color:var(--muted);">
+                        <div style="font-size:40px;margin-bottom:12px;">📝</div>
+                        <div>暂无反馈记录</div>
+                        <div style="font-size:12px;margin-top:8px;">在每天卡片底部点击"拍到了/没看到"，积累数据后即可查看统计</div>
+                    </div>
+                `;
+                document.getElementById("stats-modal").classList.add("active");
+                return;
+            }
+
+            const renderAcc = (val, label, sub) => {
+                if (val === null) return `<div class="stat-box"><div class="num" style="color:var(--muted)">-</div><div class="lbl">${label}</div></div>`;
+                const color = val >= 70 ? 'var(--high)' : val >= 40 ? 'var(--medium)' : 'var(--low)';
+                return `<div class="stat-box"><div class="num" style="color:${color}">${val}%</div><div class="lbl">${label}</div>${sub ? `<div class="sub">${sub}</div>` : ''}</div>`;
+            };
+
+            const recordsHtml = stats.records.slice().reverse().map(r => {
+                const isCorrect = (r.predicted >= 50 && r.actual) || (r.predicted < 50 && !r.actual);
+                const cls = isCorrect ? 'correct' : 'wrong';
+                const actualTxt = r.actual ? '<span class="actual yes">拍到</span>' : '<span class="actual no">未拍</span>';
+                return `
+                    <div class="record-item ${cls}">
+                        <span class="date">${r.date.slice(5)}</span>
+                        <span class="pred">预测 ${r.predicted}% · EC${r.ecPredicted}% · ICON${r.iconPredicted}%</span>
+                        ${actualTxt}
+                    </div>
+                `;
+            }).join('');
+
+            el.innerHTML = `
+                <div class="stat-big">
+                    <div class="number">${stats.accuracy}%</div>
+                    <div class="label">整体准确率（${stats.total} 条记录）</div>
+                </div>
+                <div class="stat-row">
+                    ${renderAcc(stats.highAcc, '高概率命中', '>80%且出现')}
+                    ${renderAcc(stats.midAcc, '中概率命中', '40-80%且出现')}
+                    ${renderAcc(stats.lowAcc, '低概率回避', '<40%且未出')}
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-section-title">模型对比</div>
+                <div class="model-compare-bar">
+                    <span class="name">ECMWF</span>
+                    <div class="bar-wrap"><div class="bar-fill" style="width:${stats.ecAcc}%;background:var(--ec)"></div></div>
+                    <span class="val" style="color:var(--ec)">${stats.ecAcc}%</span>
+                </div>
+                <div class="model-compare-bar">
+                    <span class="name">ICON</span>
+                    <div class="bar-wrap"><div class="bar-fill" style="width:${stats.iconAcc}%;background:var(--icon)"></div></div>
+                    <span class="val" style="color:var(--icon)">${stats.iconAcc}%</span>
+                </div>
+                ${stats.consensusAcc !== null ? `
+                <div class="model-compare-bar">
+                    <span class="name">一致时</span>
+                    <div class="bar-wrap"><div class="bar-fill" style="width:${stats.consensusAcc}%;background:var(--success)"></div></div>
+                    <span class="val" style="color:var(--success)">${stats.consensusAcc}%</span>
+                </div>
+                ` : ''}
+                <div class="stat-divider"></div>
+                <div class="stat-section-title">历史记录</div>
+                <div class="record-list">${recordsHtml}</div>
+            `;
+
+            document.getElementById("stats-modal").classList.add("active");
+        }
+
+        function closeStatsModal(e) {
+            if (!e || e.target.id === "stats-modal") {
+                document.getElementById("stats-modal").classList.remove("active");
+            }
+        }
+
+        // ====== Init ======
+
+        async function init() {
+            loadFeedback();
+            try {
+                const forecast = await fetchForecast();
+                renderList(forecast);
+            } catch (err) {
+                const status = document.getElementById("status");
+                status.innerHTML = `
+                    <div class="error">
+                        <div>加载失败：${err.message}</div>
+                        <div style="font-size:12px;margin-top:8px;color:var(--muted)">请确认后端已启动：cd backend && uvicorn app:app --reload</div>
+                        <button onclick="init()">重新加载</button>
+                    </div>
+                `;
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>
