@@ -23,7 +23,7 @@
 |------|------|------|
 | 后端框架 | FastAPI (Python) | 异步高性能，自动生成 OpenAPI 文档 |
 | 数据源 | Open-Meteo | 免费全球气象 API，无需 API Key |
-| 数值模型 | ECMWF IFS 0.25° + DWD ICON Seamless | 欧洲中心 + 德国气象局双模型 |
+| 数值模型 | ECMWF IFS 9km + DWD ICON Seamless | 欧洲中心 + 德国气象局双模型 |
 | 前端 | 原生 HTML/CSS/JS | 单页应用，无构建工具，直接由 FastAPI StaticFiles serve |
 | 进程守护 | systemd | Linux 系统级服务管理 |
 | 反向代理 | Nginx | 80/443 端口转发到后端 8000 端口 |
@@ -38,14 +38,20 @@ meri-golden-peak/
 ├── AGENTS.md                 # 本文档
 ├── README.md                 # 用户-facing 使用说明
 ├── .gitignore
+├── 实际出现日照金山结果.txt  # 原始真实结果数据源
 └── backend/
-    ├── app.py                # FastAPI 主服务：/api/forecast + /api/health + static files
+    ├── app.py                # FastAPI 主服务
     ├── requirements.txt      # Python 依赖
-    ├── deploy.sh             # 阿里云一键部署脚本（安装依赖 + systemd + Nginx）
-    ├── meili.service         # systemd 服务配置文件模板
+    ├── deploy.sh             # 阿里云一键部署脚本
+    ├── meili.service         # systemd 服务配置模板
     ├── nginx.conf            # Nginx 反向代理配置模板
+    ├── data/
+    │   ├── actual_results.json      # 真实结果（110条，40出现/70未出现）
+    │   ├── forecast_history.json    # 历史预测记录（含 ERA5 回填 + 实时预报）
+    │   └── model_weights.json       # 可学习模型权重（自动生成）
     └── static/
-        └── index.html        # 前端单页应用
+        ├── index.html        # 主预测页面
+        └── history.html      # 历史对比与反馈页面
 ```
 
 **关键约定**：
@@ -59,18 +65,19 @@ meri-golden-peak/
 
 ### 概率计算
 
-在日出时刻取该小时的气象数据，基于以下因子线性扣分：
+`calculate_probability(h, month, weights)` 从 `data/model_weights.json` 读取可学习权重，参数结构：
 
-| 因子 | 扣分规则 |
-|------|---------|
-| 高云覆盖 | >85% 扣 55，>60% 扣 35，>30% 扣 15，>10% 扣 5 |
-| 中云覆盖 | >80% 扣 25，>50% 扣 12 |
-| 低云覆盖 | >80% 扣 25，>50% 扣 12 |
-| 降水 | >2mm 扣 40，>0.5mm 扣 25，>0 扣 10 |
-| 湿度 | >95% 扣 15，>85% 扣 8 |
-| 恶劣天气代码 | 雷暴扣 30，降雪扣 25，大雾扣 20 |
+| 权重组 | 说明 |
+|--------|------|
+| `month_base` | 12个月份的基础概率值（默认 30~55） |
+| `low_cloud` | 低云覆盖双向调整：极少加分，多扣分 |
+| `high_cloud` | 高云覆盖双向调整 |
+| `mid_cloud` | 中云覆盖双向调整 |
+| `precip` | 降水量双向调整 |
+| `humid` | 湿度双向调整 |
+| `wcode` | 天气代码奖惩 |
 
-基础分 100，扣到 0 为止。
+所有阈值和分值均为可学习参数，默认值为人工经验初值。
 
 ### 双模型综合
 
@@ -109,6 +116,23 @@ confidence = 100 - diff
 - `ec.details`: ECMWF 详细气象数据（含 `weather_desc`）
 - `icon.details`: ICON 详细气象数据
 
+### GET /api/actual-results
+
+返回所有已记录的真实结果字典，`{日期: bool}`。
+
+### POST /api/actual-results
+
+提交某一天的真实结果，触发自动参数优化。
+
+请求体：`{"date": "2026-01-15", "actual": true}`
+
+响应：`{"success": true, "date": "...", "actual": true, "optimized": {"accuracy": 70.9, "samples": 110}}`
+- `optimized` 为 `null` 表示本次未找到更优参数
+
+### GET /api/forecast-history
+
+返回历史预测字典，用于历史对比页面。
+
 ### GET /api/health
 
 健康检查，返回 `{"status": "ok"}`。
@@ -117,11 +141,18 @@ confidence = 100 - diff
 
 ## 前端功能
 
+### 主页面 (`index.html`)
 - **7 天预测卡片**：圆环进度条展示概率，左侧彩色竖条标识高低概率
 - **双模型对比**：每张卡片展示 EC/ICON 各自概率和一致性状态
 - **详情弹窗**：点击卡片查看两模型在高云/中云/低云/降水/湿度等维度的详细对比
 - **实况反馈**：今天及过去日期可标记"拍到了/没看到"，数据存 localStorage
 - **统计面板**：右上角 📊 按钮查看整体准确率、各概率区间命中率、模型对比、历史记录
+
+### 历史对比页面 (`history.html`)
+- **过去 30 天固定窗口**：每日预报概率 vs 真实结果对比，命中/失误高亮
+- **提交真实结果**：日期选择器 + 出现/未出现，POST 到后端永久保存
+- **自动学习提示**：提交成功后若后端触发参数优化，提示用户刷新查看最新预测
+- **数据来源标注**：ERA5 回填数据与实时双模型预报在表格中区分显示
 
 ---
 
@@ -166,6 +197,7 @@ nginx -t && systemctl reload nginx  # 重载 Nginx
 ### 短期（无需改架构）
 - **PWA 支持**：添加 `manifest.json` 和 Service Worker，支持离线访问和添加到主屏幕
 - **定时推送**：服务器 Cron 每天 05:30 检查当天概率，若 >80% 则发送邮件/企业微信提醒
+- **在线学习增强**：当前为简单随机搜索，可升级为坐标下降或贝叶斯优化，提升收敛速度
 
 ### 中期（需后端扩展）
 - **数据库接入**：用 SQLite/PostgreSQL 存储用户反馈，支持多设备同步和数据分析
@@ -181,10 +213,11 @@ nginx -t && systemctl reload nginx  # 重载 Nginx
 
 ## 已知限制
 
-1. **Open-Meteo 免费 tier 限制**：ECMWF 模型在部分参数上可能返回 null（已选用 `ecmwf_ifs025` 解决）
+1. **Open-Meteo 免费 tier 限制**：ECMWF 模型在部分参数上可能返回 null（已选用 `ecmwf_ifs` 9km 解决）
 2. **预报时效**：最多 7-10 天，超过后误差显著增大
-3. **地形微气候**：数值模型分辨率（13-25km）无法精确捕捉梅里雪山复杂地形效应，预测仅供参考
+3. **地形微气候**：数值模型分辨率（9-25km）无法精确捕捉梅里雪山复杂地形效应，预测仅供参考
 4. **反馈数据本地存储**：当前版本反馈仅存于浏览器 localStorage，换设备/清缓存会丢失
+5. **自动优化瓶颈**：在线学习依赖历史预报数据与真实结果的配对，若新提交日期无历史气象记录则无法参与训练；随机搜索在1200轮内找到的大多是局部较优解
 
 ---
 
@@ -198,6 +231,7 @@ nginx -t && systemctl reload nginx  # 重载 Nginx
 | 2026-04-22 | 前后端分离：前端改为请求后端 `/api/forecast`，后端承担静态文件服务 |
 | 2026-04-22 | 部署支持：添加 deploy.sh、systemd 配置、Nginx 配置，支持阿里云一键部署 |
 | 2026-04-22 | 推送到 GitHub，仓库初始化 |
+| 2026-04-22 | 自动参数优化（在线学习）：POST 真实结果后触发随机搜索权重调优，自动更新历史预测概率 |
 
 ---
 

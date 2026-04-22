@@ -1,0 +1,3924 @@
+{
+  "2026-01-01": {
+    "date": "2026-01-01",
+    "probability": 57,
+    "ecProbability": 57,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-01",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 3,
+        "cloudcover_mid": 16,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 53,
+        "temperature_2m": -10.6,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.864394"
+  },
+  "2026-01-02": {
+    "date": "2026-01-02",
+    "probability": 19,
+    "ecProbability": 19,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-02",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 95,
+        "cloudcover_mid": 27,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 58,
+        "temperature_2m": -6.7,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.864548"
+  },
+  "2026-01-03": {
+    "date": "2026-01-03",
+    "probability": 19,
+    "ecProbability": 19,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-03",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 3,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 52,
+        "temperature_2m": -5.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.864675"
+  },
+  "2026-01-04": {
+    "date": "2026-01-04",
+    "probability": 19,
+    "ecProbability": 19,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-04",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 13,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 54,
+        "temperature_2m": -6.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.864799"
+  },
+  "2026-01-05": {
+    "date": "2026-01-05",
+    "probability": 33,
+    "ecProbability": 33,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-05",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 59,
+        "cloudcover_mid": 3,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 50,
+        "temperature_2m": -8.7,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.864926"
+  },
+  "2026-01-06": {
+    "date": "2026-01-06",
+    "probability": 21,
+    "ecProbability": 21,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-06",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 1,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 42,
+        "temperature_2m": -6.9,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.865045"
+  },
+  "2026-01-07": {
+    "date": "2026-01-07",
+    "probability": 33,
+    "ecProbability": 33,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-07",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 64,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 49,
+        "temperature_2m": -10.4,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.865174"
+  },
+  "2026-01-08": {
+    "date": "2026-01-08",
+    "probability": 19,
+    "ecProbability": 19,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-08",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 91,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 49,
+        "temperature_2m": -9.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.865306"
+  },
+  "2026-01-09": {
+    "date": "2026-01-09",
+    "probability": 57,
+    "ecProbability": 57,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-09",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 6,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 52,
+        "temperature_2m": -6.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.865440"
+  },
+  "2026-01-10": {
+    "date": "2026-01-10",
+    "probability": 21,
+    "ecProbability": 21,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-10",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 94,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 17,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 35,
+        "temperature_2m": -5.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.865579"
+  },
+  "2026-01-11": {
+    "date": "2026-01-11",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-11",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 87,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 33,
+        "temperature_2m": -4.7,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.865723"
+  },
+  "2026-01-12": {
+    "date": "2026-01-12",
+    "probability": 53,
+    "ecProbability": 53,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-12",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 18,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 48,
+        "temperature_2m": -4.4,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.865871"
+  },
+  "2026-01-13": {
+    "date": "2026-01-13",
+    "probability": 59,
+    "ecProbability": 59,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-13",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 26,
+        "temperature_2m": -5.7,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.866028"
+  },
+  "2026-01-14": {
+    "date": "2026-01-14",
+    "probability": 59,
+    "ecProbability": 59,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-14",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 39,
+        "temperature_2m": -5.2,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.866193"
+  },
+  "2026-01-15": {
+    "date": "2026-01-15",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-15",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 73,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 32,
+        "temperature_2m": -4.1,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.866373"
+  },
+  "2026-01-16": {
+    "date": "2026-01-16",
+    "probability": 53,
+    "ecProbability": 53,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-16",
+      "sunrise": "08:18",
+      "details": {
+        "cloudcover_low": 14,
+        "cloudcover_mid": 59,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -5.8,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.866546"
+  },
+  "2026-01-17": {
+    "date": "2026-01-17",
+    "probability": 59,
+    "ecProbability": 59,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-17",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 24,
+        "temperature_2m": -6.5,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.866721"
+  },
+  "2026-01-18": {
+    "date": "2026-01-18",
+    "probability": 59,
+    "ecProbability": 59,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-18",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 31,
+        "temperature_2m": -4.9,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.866901"
+  },
+  "2026-01-19": {
+    "date": "2026-01-19",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-19",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 71,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 44,
+        "temperature_2m": -5.5,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.867092"
+  },
+  "2026-01-20": {
+    "date": "2026-01-20",
+    "probability": 21,
+    "ecProbability": 21,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-20",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 17,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 36,
+        "temperature_2m": -3.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.867289"
+  },
+  "2026-01-21": {
+    "date": "2026-01-21",
+    "probability": 21,
+    "ecProbability": 21,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-21",
+      "sunrise": "08:17",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 9,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 40,
+        "temperature_2m": -3.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.867490"
+  },
+  "2026-01-22": {
+    "date": "2026-01-22",
+    "probability": 19,
+    "ecProbability": 19,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-22",
+      "sunrise": "08:16",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 16,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 47,
+        "temperature_2m": -4.4,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.867695"
+  },
+  "2026-01-23": {
+    "date": "2026-01-23",
+    "probability": 57,
+    "ecProbability": 57,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-23",
+      "sunrise": "08:16",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 44,
+        "temperature_2m": -4.3,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.867909"
+  },
+  "2026-01-24": {
+    "date": "2026-01-24",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-24",
+      "sunrise": "08:16",
+      "details": {
+        "cloudcover_low": 84,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 42,
+        "temperature_2m": -3.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.868142"
+  },
+  "2026-01-25": {
+    "date": "2026-01-25",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-25",
+      "sunrise": "08:15",
+      "details": {
+        "cloudcover_low": 73,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 37,
+        "temperature_2m": -3.2,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.868388"
+  },
+  "2026-01-26": {
+    "date": "2026-01-26",
+    "probability": 35,
+    "ecProbability": 35,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-26",
+      "sunrise": "08:15",
+      "details": {
+        "cloudcover_low": 65,
+        "cloudcover_mid": 1,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -4.1,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.868640"
+  },
+  "2026-01-27": {
+    "date": "2026-01-27",
+    "probability": 57,
+    "ecProbability": 57,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-27",
+      "sunrise": "08:15",
+      "details": {
+        "cloudcover_low": 5,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 43,
+        "temperature_2m": -8.4,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.868891"
+  },
+  "2026-01-28": {
+    "date": "2026-01-28",
+    "probability": 57,
+    "ecProbability": 57,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-28",
+      "sunrise": "08:14",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 49,
+        "temperature_2m": -5.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.869141"
+  },
+  "2026-01-29": {
+    "date": "2026-01-29",
+    "probability": 19,
+    "ecProbability": 19,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-29",
+      "sunrise": "08:14",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 1,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 53,
+        "temperature_2m": -2.4,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.869400"
+  },
+  "2026-01-30": {
+    "date": "2026-01-30",
+    "probability": 19,
+    "ecProbability": 19,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-30",
+      "sunrise": "08:13",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 41,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 50,
+        "temperature_2m": -1.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.869663"
+  },
+  "2026-01-31": {
+    "date": "2026-01-31",
+    "probability": 55,
+    "ecProbability": 55,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-01-31",
+      "sunrise": "08:13",
+      "details": {
+        "cloudcover_low": 13,
+        "cloudcover_mid": 5,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -10.2,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.869940"
+  },
+  "2026-02-01": {
+    "date": "2026-02-01",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-01",
+      "sunrise": "08:12",
+      "details": {
+        "cloudcover_low": 3,
+        "cloudcover_mid": 16,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 53,
+        "temperature_2m": -10.6,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870025"
+  },
+  "2026-02-02": {
+    "date": "2026-02-02",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-02",
+      "sunrise": "08:12",
+      "details": {
+        "cloudcover_low": 95,
+        "cloudcover_mid": 27,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 58,
+        "temperature_2m": -6.7,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870115"
+  },
+  "2026-02-03": {
+    "date": "2026-02-03",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-03",
+      "sunrise": "08:11",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 3,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 52,
+        "temperature_2m": -5.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870214"
+  },
+  "2026-02-04": {
+    "date": "2026-02-04",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-04",
+      "sunrise": "08:10",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 13,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 54,
+        "temperature_2m": -6.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870316"
+  },
+  "2026-02-05": {
+    "date": "2026-02-05",
+    "probability": 10,
+    "ecProbability": 10,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-05",
+      "sunrise": "08:10",
+      "details": {
+        "cloudcover_low": 59,
+        "cloudcover_mid": 3,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 50,
+        "temperature_2m": -8.7,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870426"
+  },
+  "2026-02-06": {
+    "date": "2026-02-06",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-06",
+      "sunrise": "08:09",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 1,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 42,
+        "temperature_2m": -6.9,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870540"
+  },
+  "2026-02-07": {
+    "date": "2026-02-07",
+    "probability": 10,
+    "ecProbability": 10,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-07",
+      "sunrise": "08:08",
+      "details": {
+        "cloudcover_low": 64,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 49,
+        "temperature_2m": -10.4,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870660"
+  },
+  "2026-02-08": {
+    "date": "2026-02-08",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-08",
+      "sunrise": "08:08",
+      "details": {
+        "cloudcover_low": 91,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 49,
+        "temperature_2m": -9.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870785"
+  },
+  "2026-02-09": {
+    "date": "2026-02-09",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-09",
+      "sunrise": "08:07",
+      "details": {
+        "cloudcover_low": 6,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 52,
+        "temperature_2m": -6.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.870923"
+  },
+  "2026-02-10": {
+    "date": "2026-02-10",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-10",
+      "sunrise": "08:06",
+      "details": {
+        "cloudcover_low": 94,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 17,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 35,
+        "temperature_2m": -5.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.871061"
+  },
+  "2026-02-11": {
+    "date": "2026-02-11",
+    "probability": 13,
+    "ecProbability": 13,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-11",
+      "sunrise": "08:06",
+      "details": {
+        "cloudcover_low": 87,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 33,
+        "temperature_2m": -4.7,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.871204"
+  },
+  "2026-02-12": {
+    "date": "2026-02-12",
+    "probability": 30,
+    "ecProbability": 30,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-12",
+      "sunrise": "08:05",
+      "details": {
+        "cloudcover_low": 18,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 48,
+        "temperature_2m": -4.4,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.871354"
+  },
+  "2026-02-13": {
+    "date": "2026-02-13",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-13",
+      "sunrise": "08:04",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 26,
+        "temperature_2m": -5.7,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.871510"
+  },
+  "2026-02-14": {
+    "date": "2026-02-14",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-14",
+      "sunrise": "08:03",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 39,
+        "temperature_2m": -5.2,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.871672"
+  },
+  "2026-02-15": {
+    "date": "2026-02-15",
+    "probability": 13,
+    "ecProbability": 13,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-15",
+      "sunrise": "08:03",
+      "details": {
+        "cloudcover_low": 73,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 32,
+        "temperature_2m": -4.1,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.871844"
+  },
+  "2026-02-16": {
+    "date": "2026-02-16",
+    "probability": 30,
+    "ecProbability": 30,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-16",
+      "sunrise": "08:02",
+      "details": {
+        "cloudcover_low": 14,
+        "cloudcover_mid": 59,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -5.8,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.872021"
+  },
+  "2026-02-17": {
+    "date": "2026-02-17",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-17",
+      "sunrise": "08:01",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 24,
+        "temperature_2m": -6.5,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.872206"
+  },
+  "2026-02-18": {
+    "date": "2026-02-18",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-18",
+      "sunrise": "08:00",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 31,
+        "temperature_2m": -4.9,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.872397"
+  },
+  "2026-02-19": {
+    "date": "2026-02-19",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-19",
+      "sunrise": "07:59",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 44,
+        "temperature_2m": -5.2,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.872597"
+  },
+  "2026-02-20": {
+    "date": "2026-02-20",
+    "probability": 13,
+    "ecProbability": 13,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-20",
+      "sunrise": "07:58",
+      "details": {
+        "cloudcover_low": 82,
+        "cloudcover_mid": 3,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 40,
+        "temperature_2m": -4.9,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.872792"
+  },
+  "2026-02-21": {
+    "date": "2026-02-21",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-21",
+      "sunrise": "07:57",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 42,
+        "temperature_2m": -3.8,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.872996"
+  },
+  "2026-02-22": {
+    "date": "2026-02-22",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-22",
+      "sunrise": "07:56",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 48,
+        "temperature_2m": -5.4,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.873203"
+  },
+  "2026-02-23": {
+    "date": "2026-02-23",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-23",
+      "sunrise": "07:55",
+      "details": {
+        "cloudcover_low": 2,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -3.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.873421"
+  },
+  "2026-02-24": {
+    "date": "2026-02-24",
+    "probability": 32,
+    "ecProbability": 32,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-24",
+      "sunrise": "07:54",
+      "details": {
+        "cloudcover_low": 23,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -3.0,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.873638"
+  },
+  "2026-02-25": {
+    "date": "2026-02-25",
+    "probability": 32,
+    "ecProbability": 32,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-25",
+      "sunrise": "07:53",
+      "details": {
+        "cloudcover_low": 18,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 37,
+        "temperature_2m": -3.1,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.873858"
+  },
+  "2026-02-26": {
+    "date": "2026-02-26",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-26",
+      "sunrise": "07:52",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 6,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 38,
+        "temperature_2m": -4.0,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.874086"
+  },
+  "2026-02-27": {
+    "date": "2026-02-27",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-27",
+      "sunrise": "07:51",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 43,
+        "temperature_2m": -9.1,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.874318"
+  },
+  "2026-02-28": {
+    "date": "2026-02-28",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-02-28",
+      "sunrise": "07:50",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 48,
+        "temperature_2m": -7.0,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.874557"
+  },
+  "2026-03-01": {
+    "date": "2026-03-01",
+    "probability": 38,
+    "ecProbability": 38,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-01",
+      "sunrise": "07:49",
+      "details": {
+        "cloudcover_low": 1,
+        "cloudcover_mid": 5,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 54,
+        "temperature_2m": -10.9,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.874639"
+  },
+  "2026-03-02": {
+    "date": "2026-03-02",
+    "probability": 15,
+    "ecProbability": 15,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-02",
+      "sunrise": "07:48",
+      "details": {
+        "cloudcover_low": 88,
+        "cloudcover_mid": 34,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 62,
+        "temperature_2m": -8.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.874729"
+  },
+  "2026-03-03": {
+    "date": "2026-03-03",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-03",
+      "sunrise": "07:47",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 5,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 57,
+        "temperature_2m": -6.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.874824"
+  },
+  "2026-03-04": {
+    "date": "2026-03-04",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-04",
+      "sunrise": "07:46",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 39,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 60,
+        "temperature_2m": -6.4,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.874928"
+  },
+  "2026-03-05": {
+    "date": "2026-03-05",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-05",
+      "sunrise": "07:45",
+      "details": {
+        "cloudcover_low": 44,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 52,
+        "temperature_2m": -9.8,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875035"
+  },
+  "2026-03-06": {
+    "date": "2026-03-06",
+    "probability": 15,
+    "ecProbability": 15,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-06",
+      "sunrise": "07:44",
+      "details": {
+        "cloudcover_low": 85,
+        "cloudcover_mid": 1,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 46,
+        "temperature_2m": -7.7,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875152"
+  },
+  "2026-03-07": {
+    "date": "2026-03-07",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-07",
+      "sunrise": "07:43",
+      "details": {
+        "cloudcover_low": 29,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 55,
+        "temperature_2m": -11.0,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875280"
+  },
+  "2026-03-08": {
+    "date": "2026-03-08",
+    "probability": 14,
+    "ecProbability": 14,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-08",
+      "sunrise": "07:42",
+      "details": {
+        "cloudcover_low": 54,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 57,
+        "temperature_2m": -10.5,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875413"
+  },
+  "2026-03-09": {
+    "date": "2026-03-09",
+    "probability": 38,
+    "ecProbability": 38,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-09",
+      "sunrise": "07:41",
+      "details": {
+        "cloudcover_low": 3,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 51,
+        "temperature_2m": -7.4,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875550"
+  },
+  "2026-03-10": {
+    "date": "2026-03-10",
+    "probability": 15,
+    "ecProbability": 15,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-10",
+      "sunrise": "07:40",
+      "details": {
+        "cloudcover_low": 77,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 46,
+        "temperature_2m": -6.2,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875694"
+  },
+  "2026-03-11": {
+    "date": "2026-03-11",
+    "probability": 16,
+    "ecProbability": 16,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-11",
+      "sunrise": "07:39",
+      "details": {
+        "cloudcover_low": 63,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 36,
+        "temperature_2m": -5.2,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875843"
+  },
+  "2026-03-12": {
+    "date": "2026-03-12",
+    "probability": 32,
+    "ecProbability": 32,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-12",
+      "sunrise": "07:38",
+      "details": {
+        "cloudcover_low": 48,
+        "cloudcover_mid": 64,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 51,
+        "temperature_2m": -4.8,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.875992"
+  },
+  "2026-03-13": {
+    "date": "2026-03-13",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-13",
+      "sunrise": "07:36",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 20,
+        "temperature_2m": -4.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.876150"
+  },
+  "2026-03-14": {
+    "date": "2026-03-14",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-14",
+      "sunrise": "07:35",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 33,
+        "temperature_2m": -4.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.876308"
+  },
+  "2026-03-15": {
+    "date": "2026-03-15",
+    "probability": 16,
+    "ecProbability": 16,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-15",
+      "sunrise": "07:34",
+      "details": {
+        "cloudcover_low": 52,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 35,
+        "temperature_2m": -4.8,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.876478"
+  },
+  "2026-03-16": {
+    "date": "2026-03-16",
+    "probability": 34,
+    "ecProbability": 34,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-16",
+      "sunrise": "07:33",
+      "details": {
+        "cloudcover_low": 23,
+        "cloudcover_mid": 15,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 45,
+        "temperature_2m": -6.3,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.876647"
+  },
+  "2026-03-17": {
+    "date": "2026-03-17",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-17",
+      "sunrise": "07:32",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 22,
+        "temperature_2m": -6.6,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.876824"
+  },
+  "2026-03-18": {
+    "date": "2026-03-18",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-18",
+      "sunrise": "07:31",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 30,
+        "temperature_2m": -4.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.877005"
+  },
+  "2026-03-19": {
+    "date": "2026-03-19",
+    "probability": 38,
+    "ecProbability": 38,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-19",
+      "sunrise": "07:29",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 44,
+        "temperature_2m": -5.2,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.877189"
+  },
+  "2026-03-20": {
+    "date": "2026-03-20",
+    "probability": 17,
+    "ecProbability": 17,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-20",
+      "sunrise": "07:28",
+      "details": {
+        "cloudcover_low": 82,
+        "cloudcover_mid": 3,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 40,
+        "temperature_2m": -4.9,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.877386"
+  },
+  "2026-03-21": {
+    "date": "2026-03-21",
+    "probability": 2,
+    "ecProbability": 2,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-21",
+      "sunrise": "07:27",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 42,
+        "temperature_2m": -3.8,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.877584"
+  },
+  "2026-03-22": {
+    "date": "2026-03-22",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-22",
+      "sunrise": "07:26",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 48,
+        "temperature_2m": -5.4,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.877793"
+  },
+  "2026-03-23": {
+    "date": "2026-03-23",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-23",
+      "sunrise": "07:25",
+      "details": {
+        "cloudcover_low": 2,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -3.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.878011"
+  },
+  "2026-03-24": {
+    "date": "2026-03-24",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-24",
+      "sunrise": "07:24",
+      "details": {
+        "cloudcover_low": 23,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 41,
+        "temperature_2m": -3.0,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.878234"
+  },
+  "2026-03-25": {
+    "date": "2026-03-25",
+    "probability": 36,
+    "ecProbability": 36,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-25",
+      "sunrise": "07:23",
+      "details": {
+        "cloudcover_low": 18,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 37,
+        "temperature_2m": -3.1,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.878464"
+  },
+  "2026-03-26": {
+    "date": "2026-03-26",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-26",
+      "sunrise": "07:22",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 6,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 38,
+        "temperature_2m": -4.0,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.878694"
+  },
+  "2026-03-27": {
+    "date": "2026-03-27",
+    "probability": 38,
+    "ecProbability": 38,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-27",
+      "sunrise": "07:20",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 43,
+        "temperature_2m": -9.1,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.878930"
+  },
+  "2026-03-28": {
+    "date": "2026-03-28",
+    "probability": 38,
+    "ecProbability": 38,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-28",
+      "sunrise": "07:19",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 48,
+        "temperature_2m": -7.0,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.879180"
+  },
+  "2026-03-29": {
+    "date": "2026-03-29",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-29",
+      "sunrise": "07:18",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 3,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 58,
+        "temperature_2m": -3.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.879429"
+  },
+  "2026-03-30": {
+    "date": "2026-03-30",
+    "probability": 15,
+    "ecProbability": 15,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-30",
+      "sunrise": "07:17",
+      "details": {
+        "cloudcover_low": 80,
+        "cloudcover_mid": 45,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 53,
+        "temperature_2m": -3.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.879685"
+  },
+  "2026-03-31": {
+    "date": "2026-03-31",
+    "probability": 15,
+    "ecProbability": 15,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-03-31",
+      "sunrise": "07:16",
+      "details": {
+        "cloudcover_low": 85,
+        "cloudcover_mid": 18,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 47,
+        "temperature_2m": -6.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.879951"
+  },
+  "2026-04-01": {
+    "date": "2026-04-01",
+    "probability": 44,
+    "ecProbability": 44,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-01",
+      "sunrise": "07:15",
+      "details": {
+        "cloudcover_low": 1,
+        "cloudcover_mid": 5,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 54,
+        "temperature_2m": -10.9,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880036"
+  },
+  "2026-04-02": {
+    "date": "2026-04-02",
+    "probability": 21,
+    "ecProbability": 21,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-02",
+      "sunrise": "07:13",
+      "details": {
+        "cloudcover_low": 88,
+        "cloudcover_mid": 34,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 62,
+        "temperature_2m": -8.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880125"
+  },
+  "2026-04-03": {
+    "date": "2026-04-03",
+    "probability": 6,
+    "ecProbability": 6,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-03",
+      "sunrise": "07:12",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 5,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 57,
+        "temperature_2m": -6.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880214"
+  },
+  "2026-04-04": {
+    "date": "2026-04-04",
+    "probability": 6,
+    "ecProbability": 6,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-04",
+      "sunrise": "07:11",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 39,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 60,
+        "temperature_2m": -6.4,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880310"
+  },
+  "2026-04-05": {
+    "date": "2026-04-05",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-05",
+      "sunrise": "07:10",
+      "details": {
+        "cloudcover_low": 44,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 52,
+        "temperature_2m": -9.8,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880403"
+  },
+  "2026-04-06": {
+    "date": "2026-04-06",
+    "probability": 21,
+    "ecProbability": 21,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-06",
+      "sunrise": "07:09",
+      "details": {
+        "cloudcover_low": 85,
+        "cloudcover_mid": 1,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 46,
+        "temperature_2m": -7.7,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880504"
+  },
+  "2026-04-07": {
+    "date": "2026-04-07",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-07",
+      "sunrise": "07:08",
+      "details": {
+        "cloudcover_low": 29,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 55,
+        "temperature_2m": -11.0,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880609"
+  },
+  "2026-04-08": {
+    "date": "2026-04-08",
+    "probability": 20,
+    "ecProbability": 20,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-08",
+      "sunrise": "07:07",
+      "details": {
+        "cloudcover_low": 54,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 57,
+        "temperature_2m": -10.5,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880719"
+  },
+  "2026-04-09": {
+    "date": "2026-04-09",
+    "probability": 44,
+    "ecProbability": 44,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-09",
+      "sunrise": "07:06",
+      "details": {
+        "cloudcover_low": 3,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 51,
+        "temperature_2m": -7.4,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880838"
+  },
+  "2026-04-10": {
+    "date": "2026-04-10",
+    "probability": 21,
+    "ecProbability": 21,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-10",
+      "sunrise": "07:04",
+      "details": {
+        "cloudcover_low": 77,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 46,
+        "temperature_2m": -6.2,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.880964"
+  },
+  "2026-04-11": {
+    "date": "2026-04-11",
+    "probability": 22,
+    "ecProbability": 22,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-11",
+      "sunrise": "07:03",
+      "details": {
+        "cloudcover_low": 63,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 36,
+        "temperature_2m": -5.2,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.881086"
+  },
+  "2026-04-12": {
+    "date": "2026-04-12",
+    "probability": 38,
+    "ecProbability": 38,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-12",
+      "sunrise": "07:02",
+      "details": {
+        "cloudcover_low": 48,
+        "cloudcover_mid": 64,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 51,
+        "temperature_2m": -4.8,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.881212"
+  },
+  "2026-04-13": {
+    "date": "2026-04-13",
+    "probability": 46,
+    "ecProbability": 46,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-13",
+      "sunrise": "07:01",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 20,
+        "temperature_2m": -4.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.881347"
+  },
+  "2026-04-14": {
+    "date": "2026-04-14",
+    "probability": 46,
+    "ecProbability": 46,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-14",
+      "sunrise": "07:00",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 33,
+        "temperature_2m": -4.8,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.881492"
+  },
+  "2026-04-15": {
+    "date": "2026-04-15",
+    "probability": 22,
+    "ecProbability": 22,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-15",
+      "sunrise": "06:59",
+      "details": {
+        "cloudcover_low": 59,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 36,
+        "temperature_2m": -5.2,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.881637"
+  },
+  "2026-04-16": {
+    "date": "2026-04-16",
+    "probability": 40,
+    "ecProbability": 40,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-16",
+      "sunrise": "06:58",
+      "details": {
+        "cloudcover_low": 41,
+        "cloudcover_mid": 1,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 46,
+        "temperature_2m": -6.3,
+        "weather_code": 1,
+        "weather_desc": "主要晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.881788"
+  },
+  "2026-04-17": {
+    "date": "2026-04-17",
+    "probability": 46,
+    "ecProbability": 46,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-17",
+      "sunrise": "06:57",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 25,
+        "temperature_2m": -5.9,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.881952"
+  },
+  "2026-04-18": {
+    "date": "2026-04-18",
+    "probability": 46,
+    "ecProbability": 46,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-18",
+      "sunrise": "06:56",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 31,
+        "temperature_2m": -4.9,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.882121"
+  },
+  "2026-04-19": {
+    "date": "2026-04-19",
+    "probability": 44,
+    "ecProbability": 44,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-19",
+      "sunrise": "06:55",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 43,
+        "temperature_2m": -5.1,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.882295"
+  },
+  "2026-04-20": {
+    "date": "2026-04-20",
+    "probability": 23,
+    "ecProbability": 23,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-20",
+      "sunrise": "06:54",
+      "details": {
+        "cloudcover_low": 82,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 39,
+        "temperature_2m": -4.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.882470"
+  },
+  "2026-04-21": {
+    "date": "2026-04-21",
+    "probability": 8,
+    "ecProbability": 8,
+    "iconProbability": null,
+    "confidence": null,
+    "diff": null,
+    "advice": "基于 ERA5 历史实况反推的参考概率",
+    "tags": [
+      {
+        "text": "ERA5参考",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-21",
+      "sunrise": "06:53",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 40,
+        "temperature_2m": -3.8,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": null,
+    "source": "historical_era5",
+    "saved_at": "2026-04-22T16:52:19.882645"
+  },
+  "2026-04-22": {
+    "date": "2026-04-22",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": 0,
+    "confidence": 100,
+    "diff": 0,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      },
+      {
+        "text": "低云蔽山",
+        "highlight": false
+      },
+      {
+        "text": "有降水",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-22",
+      "sunrise": "06:52",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 100,
+        "cloudcover_high": 100,
+        "precipitation": 2.6,
+        "relative_humidity_2m": 100,
+        "temperature_2m": 2.7,
+        "weather_code": 71,
+        "weather_desc": "小雪"
+      }
+    },
+    "icon": {
+      "date": "2026-04-22",
+      "sunrise": "06:52",
+      "details": {
+        "cloudcover_low": 62,
+        "cloudcover_mid": 100,
+        "cloudcover_high": 100,
+        "precipitation": 0.3,
+        "relative_humidity_2m": 92,
+        "temperature_2m": 2.6,
+        "weather_code": 61,
+        "weather_desc": "小雨"
+      }
+    },
+    "saved_at": "2026-04-22T16:59:43.508421"
+  },
+  "2026-04-23": {
+    "date": "2026-04-23",
+    "probability": 10,
+    "ecProbability": 5,
+    "iconProbability": 15,
+    "confidence": 90,
+    "diff": 10,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      }
+    ],
+    "ec": {
+      "date": "2026-04-23",
+      "sunrise": "06:51",
+      "details": {
+        "cloudcover_low": 52,
+        "cloudcover_mid": 14,
+        "cloudcover_high": 94,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 79,
+        "temperature_2m": 1.5,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": {
+      "date": "2026-04-23",
+      "sunrise": "06:51",
+      "details": {
+        "cloudcover_low": 33,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 100,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 88,
+        "temperature_2m": 2.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "saved_at": "2026-04-22T16:59:43.508455"
+  },
+  "2026-04-24": {
+    "date": "2026-04-24",
+    "probability": 44,
+    "ecProbability": 44,
+    "iconProbability": 44,
+    "confidence": 100,
+    "diff": 0,
+    "advice": "🤔 有一定机会，需看运气",
+    "tags": [
+      {
+        "text": "中等",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-24",
+      "sunrise": "06:50",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 2,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 60,
+        "temperature_2m": 0.9,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "icon": {
+      "date": "2026-04-24",
+      "sunrise": "06:50",
+      "details": {
+        "cloudcover_low": 0,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 0,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 64,
+        "temperature_2m": 4.5,
+        "weather_code": 0,
+        "weather_desc": "晴朗"
+      }
+    },
+    "saved_at": "2026-04-22T16:59:43.508458"
+  },
+  "2026-04-25": {
+    "date": "2026-04-25",
+    "probability": 6,
+    "ecProbability": 0,
+    "iconProbability": 12,
+    "confidence": 88,
+    "diff": 12,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      },
+      {
+        "text": "低云蔽山",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-25",
+      "sunrise": "06:49",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 5,
+        "cloudcover_high": 3,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 93,
+        "temperature_2m": 1.8,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": {
+      "date": "2026-04-25",
+      "sunrise": "06:49",
+      "details": {
+        "cloudcover_low": 67,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 27,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 94,
+        "temperature_2m": 4.6,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
+      }
+    },
+    "saved_at": "2026-04-22T16:59:43.508461"
+  },
+  "2026-04-26": {
+    "date": "2026-04-26",
+    "probability": 2,
+    "ecProbability": 0,
+    "iconProbability": 4,
+    "confidence": 96,
+    "diff": 4,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      },
+      {
+        "text": "低云蔽山",
+        "highlight": false
+      },
+      {
+        "text": "有降水",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-26",
+      "sunrise": "06:48",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 85,
+        "cloudcover_high": 99,
+        "precipitation": 0.4,
+        "relative_humidity_2m": 96,
+        "temperature_2m": 4.1,
+        "weather_code": 51,
+        "weather_desc": "毛毛雨"
+      }
+    },
+    "icon": {
+      "date": "2026-04-26",
+      "sunrise": "06:48",
+      "details": {
+        "cloudcover_low": 72,
+        "cloudcover_mid": 62,
+        "cloudcover_high": 35,
+        "precipitation": 0.2,
+        "relative_humidity_2m": 89,
+        "temperature_2m": 4.4,
+        "weather_code": 61,
+        "weather_desc": "小雨"
+      }
+    },
+    "saved_at": "2026-04-22T16:59:43.508464"
+  },
+  "2026-04-27": {
+    "date": "2026-04-27",
+    "probability": 10,
+    "ecProbability": 10,
+    "iconProbability": 11,
+    "confidence": 99,
+    "diff": 1,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      },
+      {
+        "text": "低云蔽山",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-27",
+      "sunrise": "06:47",
+      "details": {
+        "cloudcover_low": 68,
+        "cloudcover_mid": 43,
+        "cloudcover_high": 33,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 89,
+        "temperature_2m": 3.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": {
+      "date": "2026-04-27",
+      "sunrise": "06:47",
+      "details": {
+        "cloudcover_low": 74,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 65,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 92,
+        "temperature_2m": 4.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "saved_at": "2026-04-22T16:59:43.508466"
+  },
+  "2026-04-28": {
+    "date": "2026-04-28",
+    "probability": 0,
+    "ecProbability": 0,
+    "iconProbability": 0,
+    "confidence": 100,
+    "diff": 0,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      },
+      {
+        "text": "低云蔽山",
+        "highlight": false
+      },
+      {
+        "text": "有降水",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-28",
+      "sunrise": "06:46",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 100,
+        "cloudcover_high": 69,
+        "precipitation": 1.5,
+        "relative_humidity_2m": 94,
+        "temperature_2m": 5.0,
+        "weather_code": 61,
+        "weather_desc": "小雨"
+      }
+    },
+    "icon": {
+      "date": "2026-04-28",
+      "sunrise": "06:46",
+      "details": {
+        "cloudcover_low": 97,
+        "cloudcover_mid": 97,
+        "cloudcover_high": 7,
+        "precipitation": 0.5,
+        "relative_humidity_2m": 91,
+        "temperature_2m": 4.8,
+        "weather_code": 61,
+        "weather_desc": "小雨"
+      }
+    },
+    "saved_at": "2026-04-22T16:59:43.508468"
+  }
+}

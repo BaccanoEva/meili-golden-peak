@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>历史对比 · 梅里雪山日照金山</title>
+    <style>
+        :root {
+            --bg: #0b1021;
+            --card: #151e32;
+            --card-hover: #1a2540;
+            --text: #f0f4f8;
+            --muted: #8896ab;
+            --accent: #fbbf24;
+            --high: #22c55e;
+            --medium: #f59e0b;
+            --low: #ef4444;
+            --ec: #3b82f6;
+            --icon: #8b5cf6;
+            --success: #10b981;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(180deg, #0b1021 0%, #111827 50%, #0f172a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 24px 16px 40px; }
+
+        header { text-align: center; padding: 20px 0 24px; position: relative; }
+        .mountain-icon {
+            font-size: 40px;
+            line-height: 1;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.3));
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b, #fcd34d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { color: var(--muted); font-size: 13px; margin-top: 6px; }
+        .back-btn {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text);
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 13px;
+            transition: all 0.2s;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .back-btn:hover { background: rgba(255,255,255,0.12); }
+
+        /* 统计卡片 */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 16px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+        .stat-card .num {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-card .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+        /* 表单 */
+        .form-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+        .form-title { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+        .form-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
+        .form-group { display: flex; flex-direction: column; gap: 6px; }
+        .form-group label { font-size: 12px; color: var(--muted); }
+        .form-group input, .form-group select {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text);
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: 14px;
+            outline: none;
+        }
+        .form-group input:focus, .form-group select:focus { border-color: var(--accent); }
+        .btn-submit {
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            color: #0b1021;
+            border: none;
+            padding: 9px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .btn-submit:hover { opacity: 0.9; }
+        .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+        .msg { margin-top: 12px; font-size: 13px; min-height: 20px; }
+        .msg.ok { color: var(--success); }
+        .msg.err { color: var(--low); }
+
+        /* 表格 */
+        .table-wrap {
+            background: var(--card);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+        .table-header {
+            padding: 16px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .table-scroll { overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        thead th {
+            background: rgba(255,255,255,0.03);
+            color: var(--muted);
+            font-weight: 600;
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        tbody tr {
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            transition: background 0.2s;
+        }
+        tbody tr:hover { background: rgba(255,255,255,0.02); }
+        tbody td {
+            padding: 14px 16px;
+            vertical-align: middle;
+        }
+        .td-date { font-weight: 600; white-space: nowrap; }
+        .td-date .wk { font-size: 11px; color: var(--muted); font-weight: 400; }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .badge.yes { background: rgba(16,185,129,0.15); color: var(--success); }
+        .badge.no { background: rgba(239,68,68,0.15); color: var(--low); }
+        .badge.unknown { background: rgba(255,255,255,0.05); color: var(--muted); }
+
+        .badge.correct { background: rgba(34,197,94,0.15); color: var(--high); }
+        .badge.wrong { background: rgba(239,68,68,0.15); color: var(--low); }
+        .badge.none { background: rgba(255,255,255,0.05); color: var(--muted); }
+
+        .prob { font-weight: 700; }
+        .prob.high { color: var(--high); }
+        .prob.medium { color: var(--medium); }
+        .prob.low { color: var(--low); }
+
+        .ec-val { color: var(--ec); }
+        .icon-val { color: var(--icon); }
+
+        .advice-text { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+        .empty {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--muted);
+        }
+
+        .spinner {
+            width: 28px; height: 28px;
+            border: 3px solid rgba(255,255,255,0.1);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 12px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px 0;
+            font-size: 11px;
+            color: rgba(136, 150, 171, 0.6);
+        }
+
+        @media (max-width: 640px) {
+            .container { padding: 16px 12px 32px; }
+            table { font-size: 12px; }
+            tbody td, thead th { padding: 10px 12px; }
+            .hide-sm { display: none; }
+            .back-btn { position: static; display: inline-block; margin-bottom: 12px; }
+            header { padding-top: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="back-btn">← 返回预测</a>
+            <div class="mountain-icon">🏔️</div>
+            <h1>历史对比</h1>
+            <p class="subtitle">预测结果与实际出现记录对比 · 持续积累验证数据</p>
+        </header>
+
+        <div class="stats-grid" id="stats-grid">
+            <div class="stat-card"><div class="num">-</div><div class="lbl">加载中</div></div>
+        </div>
+
+        <div class="form-card">
+            <div class="form-title">📝 记录真实结果</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>日期</label>
+                    <input type="date" id="input-date">
+                </div>
+                <div class="form-group">
+                    <label>实际是否出现</label>
+                    <select id="input-actual">
+                        <option value="true">✅ 出现了日照金山</option>
+                        <option value="false">❌ 没有出现</option>
+                    </select>
+                </div>
+                <button class="btn-submit" id="btn-submit" onclick="submitActual()">提交记录</button>
+            </div>
+            <div class="msg" id="msg"></div>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-header">📋 过去30天预测 vs 真实结果对比表</div>
+            <div class="table-scroll">
+                <div id="table-container">
+                    <div class="empty"><div class="spinner"></div>正在加载数据...</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>数据来源：Open-Meteo ECMWF + ICON 双模型预报 · 历史日期使用 ERA5 再分析数据反推参考概率 · 真实结果由用户每日记录</p>
+        </footer>
+    </div>
+
+    <script>
+        // 设置日期输入框默认值为今天
+        document.getElementById('input-date').valueAsDate = new Date();
+
+        async function loadData() {
+            const [aRes, hRes] = await Promise.all([
+                fetch('/api/actual-results'),
+                fetch('/api/forecast-history')
+            ]);
+            if (!aRes.ok || !hRes.ok) throw new Error('API 请求失败');
+            const actual = await aRes.json();
+            const history = await hRes.json();
+            return { actual, history };
+        }
+
+        function fmtDate(dateStr) {
+            const d = new Date(dateStr + 'T00:00:00');
+            const wk = ['周日','周一','周二','周三','周四','周五','周六'];
+            return {
+                short: dateStr.slice(5),
+                full: dateStr,
+                weekday: wk[d.getDay()]
+            };
+        }
+
+        function getProbClass(p) {
+            if (p >= 80) return 'high';
+            if (p >= 40) return 'medium';
+            return 'low';
+        }
+
+        function getPastMonthDates() {
+            const dates = [];
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            for (let i = 0; i < 30; i++) {
+                const d = new Date(today);
+                d.setDate(d.getDate() - i);
+                const y = d.getFullYear();
+                const m = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                dates.push(`${y}-${m}-${day}`);
+            }
+            return dates;
+        }
+
+        function renderStats(rows) {
+            const total = rows.length;
+            const withForecast = rows.filter(r => r.hasForecast);
+            const withActual = rows.filter(r => r.hasActual);
+            const actualYes = rows.filter(r => r.hasActual && r.actual).length;
+            const correct = rows.filter(r => r.isCorrect === true).length;
+            const accuracy = withActual.length ? Math.round(correct / withActual.length * 100) : 0;
+
+            const html = `
+                <div class="stat-card">
+                    <div class="num">${total}</div>
+                    <div class="lbl">展示天数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">${withActual.length}</div>
+                    <div class="lbl">已确认结果</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">${actualYes}</div>
+                    <div class="lbl">实际出现天数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">${accuracy}%</div>
+                    <div class="lbl">预测准确率</div>
+                </div>
+            `;
+            document.getElementById('stats-grid').innerHTML = html;
+        }
+
+        function renderTable(rows) {
+            if (rows.length === 0) {
+                document.getElementById('table-container').innerHTML = '<div class="empty">暂无数据</div>';
+                return;
+            }
+
+            const tbody = rows.map(r => {
+                const d = fmtDate(r.date);
+                const isEra5 = r.source === 'historical_era5';
+                const ec = r.ecProb !== null ? `<span class="ec-val">${r.ecProb}%</span>` : '<span style="color:var(--muted)">-</span>';
+                const icon = r.iconProb !== null ? `<span class="icon-val">${r.iconProb}%</span>` : '<span style="color:var(--muted)">-</span>';
+                const comb = r.combined !== null
+                    ? `<span class="prob ${getProbClass(r.combined)}">${r.combined}%</span>${isEra5 ? '<span style="font-size:10px;color:var(--muted);margin-left:6px;background:rgba(255,255,255,0.05);padding:1px 5px;border-radius:6px;">ERA5参考</span>' : ''}`
+                    : '<span style="color:var(--muted)">-</span>';
+
+                let actualBadge, resultBadge;
+                if (!r.hasActual) {
+                    actualBadge = '<span class="badge unknown">待确认</span>';
+                    resultBadge = '<span class="badge none">-</span>';
+                } else if (r.actual) {
+                    actualBadge = '<span class="badge yes">✓ 出现</span>';
+                    resultBadge = r.isCorrect === true ? '<span class="badge correct">✓ 命中</span>' :
+                                  r.isCorrect === false ? '<span class="badge wrong">✗ 失误</span>' :
+                                  '<span class="badge none">-</span>';
+                } else {
+                    actualBadge = '<span class="badge no">✗ 未出现</span>';
+                    resultBadge = r.isCorrect === true ? '<span class="badge correct">✓ 命中</span>' :
+                                  r.isCorrect === false ? '<span class="badge wrong">✗ 失误</span>' :
+                                  '<span class="badge none">-</span>';
+                }
+
+                const advice = r.advice || '';
+
+                return `
+                    <tr>
+                        <td class="td-date">
+                            <div>${d.short}</div>
+                            <div class="wk">${d.weekday}</div>
+                        </td>
+                        <td>${ec}</td>
+                        <td>${icon}</td>
+                        <td>
+                            ${comb}
+                            ${advice ? `<div class="advice-text">${advice}</div>` : ''}
+                        </td>
+                        <td>${actualBadge}</td>
+                        <td>${resultBadge}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            document.getElementById('table-container').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>ECMWF</th>
+                            <th>ICON</th>
+                            <th>综合概率</th>
+                            <th>真实结果</th>
+                            <th>预测判断</th>
+                        </tr>
+                    </thead>
+                    <tbody>${tbody}</tbody>
+                </table>
+            `;
+        }
+
+        async function init() {
+            try {
+                const { actual, history } = await loadData();
+                const dates = getPastMonthDates();
+                const rows = dates.map(date => {
+                    const h = history[date];
+                    const a = actual[date];
+                    return {
+                        date,
+                        hasForecast: !!h,
+                        hasActual: a !== undefined,
+                        ecProb: h ? h.ecProbability : null,
+                        iconProb: h ? h.iconProbability : null,
+                        combined: h ? h.probability : null,
+                        advice: h ? h.advice : null,
+                        source: h ? h.source : null,
+                        actual: a,
+                        isCorrect: h && a !== undefined ? ((h.probability >= 50 && a) || (h.probability < 50 && !a)) : null
+                    };
+                });
+                renderStats(rows);
+                renderTable(rows);
+            } catch (err) {
+                document.getElementById('table-container').innerHTML = `<div class="empty" style="color:var(--low)">加载失败：${err.message}<br><small style="color:var(--muted)">请确认后端已启动</small></div>`;
+                document.getElementById('stats-grid').innerHTML = `
+                    <div class="stat-card"><div class="num" style="color:var(--low)">!</div><div class="lbl">加载失败</div></div>
+                `;
+            }
+        }
+
+        async function submitActual() {
+            const date = document.getElementById('input-date').value;
+            const actualVal = document.getElementById('input-actual').value;
+            const msg = document.getElementById('msg');
+            const btn = document.getElementById('btn-submit');
+
+            if (!date) {
+                msg.textContent = '请选择日期';
+                msg.className = 'msg err';
+                return;
+            }
+
+            btn.disabled = true;
+            msg.textContent = '提交中...';
+            msg.className = 'msg';
+
+            try {
+                const res = await fetch('/api/actual-results', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ date, actual: actualVal === 'true' })
+                });
+                if (!res.ok) {
+                    const err = await res.json();
+                    throw new Error(err.detail || '提交失败');
+                }
+                const data = await res.json();
+                let text = `✓ 已记录 ${date} 的真实结果`;
+                if (data.optimized) {
+                    text += `。模型已自动学习并优化参数（训练集准确率 ${data.optimized.accuracy}%），请刷新页面查看最新预测`;
+                }
+                msg.textContent = text;
+                msg.className = 'msg ok';
+                await init();
+            } catch (err) {
+                msg.textContent = '提交失败：' + err.message;
+                msg.className = 'msg err';
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>
