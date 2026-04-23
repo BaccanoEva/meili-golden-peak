@@ -11,28 +11,51 @@ if [ "$EUID" -ne 0 ]; then
     exit 1
 fi
 
+# 自动获取项目路径
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+
+echo "项目路径: $PROJECT_DIR"
+
 # 1. 更新系统
-echo "[1/6] 更新系统包..."
+echo "[1/7] 更新系统包..."
 apt-get update -y
 apt-get install -y python3 python3-pip python3-venv nginx curl
 
 # 2. 安装 Python 依赖
-echo "[2/6] 安装 Python 依赖..."
-cd "$(dirname "$0")"
+echo "[2/7] 安装 Python 依赖..."
+cd "$SCRIPT_DIR"
 pip3 install -r requirements.txt
 
-# 3. 配置 systemd 服务
-echo "[3/6] 配置 systemd 服务..."
-cp meili.service /etc/systemd/system/meili.service
+# 3. 生成 systemd 服务配置（自动适配实际路径）
+echo "[3/7] 配置 systemd 服务..."
+cat > /etc/systemd/system/meili.service <<EOF
+[Unit]
+Description=梅里雪山日照金山预测服务
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=$SCRIPT_DIR
+ExecStart=/usr/bin/python3 -m uvicorn app:app --host 0.0.0.0 --port 8000 --workers 2
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
 systemctl daemon-reload
 systemctl enable meili
 
 # 4. 启动服务
-echo "[4/6] 启动服务..."
+echo "[4/7] 启动服务..."
 systemctl restart meili
 
 # 5. 配置 Nginx
-echo "[5/6] 配置 Nginx..."
+echo "[5/7] 配置 Nginx..."
 cp nginx.conf /etc/nginx/sites-available/meili
 
 # 删除默认站点（如果有）
@@ -48,8 +71,18 @@ nginx -t
 systemctl restart nginx
 systemctl enable nginx
 
-# 6. 检查状态
-echo "[6/6] 检查服务状态..."
+# 6. 配置防火墙（如有必要）
+echo "[6/7] 检查防火墙配置..."
+if command -v ufw &> /dev/null; then
+    ufw allow 22/tcp || true
+    ufw allow 80/tcp || true
+    ufw allow 443/tcp || true
+    ufw allow 8000/tcp || true
+    echo "  UFW 防火墙规则已更新"
+fi
+
+# 7. 检查状态
+echo "[7/7] 检查服务状态..."
 sleep 2
 
 if systemctl is-active --quiet meili; then
@@ -83,7 +116,9 @@ echo "  查看服务状态: systemctl status meili"
 echo "  查看日志:     journalctl -u meili -f"
 echo "  重启服务:     systemctl restart meili"
 echo "  停止服务:     systemctl stop meili"
+echo "  重载 Nginx:   nginx -t && systemctl reload nginx"
 echo ""
 echo "如需 HTTPS，请先配置域名，然后运行:"
+echo "  apt-get install -y certbot python3-certbot-nginx"
 echo "  certbot --nginx -d your-domain.com"
 echo ""

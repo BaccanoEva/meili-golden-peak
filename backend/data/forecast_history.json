@@ -3610,11 +3610,11 @@
   },
   "2026-04-23": {
     "date": "2026-04-23",
-    "probability": 10,
-    "ecProbability": 5,
-    "iconProbability": 15,
-    "confidence": 90,
-    "diff": 10,
+    "probability": 12,
+    "ecProbability": 14,
+    "iconProbability": 10,
+    "confidence": 96,
+    "diff": 4,
     "advice": "❌ 几乎无望，改日再来",
     "tags": [
       {
@@ -3631,12 +3631,12 @@
       "date": "2026-04-23",
       "sunrise": "06:51",
       "details": {
-        "cloudcover_low": 52,
-        "cloudcover_mid": 14,
-        "cloudcover_high": 94,
+        "cloudcover_low": 20,
+        "cloudcover_mid": 98,
+        "cloudcover_high": 99,
         "precipitation": 0.0,
-        "relative_humidity_2m": 79,
-        "temperature_2m": 1.5,
+        "relative_humidity_2m": 88,
+        "temperature_2m": 1.8,
         "weather_code": 3,
         "weather_desc": "阴天"
       }
@@ -3645,17 +3645,17 @@
       "date": "2026-04-23",
       "sunrise": "06:51",
       "details": {
-        "cloudcover_low": 33,
+        "cloudcover_low": 52,
         "cloudcover_mid": 0,
-        "cloudcover_high": 100,
+        "cloudcover_high": 43,
         "precipitation": 0.0,
-        "relative_humidity_2m": 88,
-        "temperature_2m": 2.1,
-        "weather_code": 3,
-        "weather_desc": "阴天"
+        "relative_humidity_2m": 92,
+        "temperature_2m": 1.6,
+        "weather_code": 2,
+        "weather_desc": "部分多云"
       }
     },
-    "saved_at": "2026-04-22T16:59:43.508455"
+    "saved_at": "2026-04-23T08:37:02.500390"
   },
   "2026-04-24": {
     "date": "2026-04-24",
@@ -3676,11 +3676,11 @@
       "sunrise": "06:50",
       "details": {
         "cloudcover_low": 0,
-        "cloudcover_mid": 2,
+        "cloudcover_mid": 0,
         "cloudcover_high": 0,
         "precipitation": 0.0,
         "relative_humidity_2m": 60,
-        "temperature_2m": 0.9,
+        "temperature_2m": 0.8,
         "weather_code": 0,
         "weather_desc": "晴朗"
       }
@@ -3693,13 +3693,13 @@
         "cloudcover_mid": 0,
         "cloudcover_high": 0,
         "precipitation": 0.0,
-        "relative_humidity_2m": 64,
-        "temperature_2m": 4.5,
+        "relative_humidity_2m": 57,
+        "temperature_2m": 5.2,
         "weather_code": 0,
         "weather_desc": "晴朗"
       }
     },
-    "saved_at": "2026-04-22T16:59:43.508458"
+    "saved_at": "2026-04-23T08:37:02.500431"
   },
   "2026-04-25": {
     "date": "2026-04-25",
@@ -3729,11 +3729,11 @@
       "sunrise": "06:49",
       "details": {
         "cloudcover_low": 100,
-        "cloudcover_mid": 5,
-        "cloudcover_high": 3,
+        "cloudcover_mid": 15,
+        "cloudcover_high": 8,
         "precipitation": 0.0,
-        "relative_humidity_2m": 93,
-        "temperature_2m": 1.8,
+        "relative_humidity_2m": 100,
+        "temperature_2m": -0.7,
         "weather_code": 3,
         "weather_desc": "阴天"
       }
@@ -3742,35 +3742,30 @@
       "date": "2026-04-25",
       "sunrise": "06:49",
       "details": {
-        "cloudcover_low": 67,
+        "cloudcover_low": 57,
         "cloudcover_mid": 0,
-        "cloudcover_high": 27,
+        "cloudcover_high": 2,
         "precipitation": 0.0,
-        "relative_humidity_2m": 94,
-        "temperature_2m": 4.6,
+        "relative_humidity_2m": 90,
+        "temperature_2m": 4.5,
         "weather_code": 2,
         "weather_desc": "部分多云"
       }
     },
-    "saved_at": "2026-04-22T16:59:43.508461"
+    "saved_at": "2026-04-23T08:37:02.500436"
   },
   "2026-04-26": {
     "date": "2026-04-26",
-    "probability": 2,
+    "probability": 12,
     "ecProbability": 0,
-    "iconProbability": 4,
-    "confidence": 96,
-    "diff": 4,
+    "iconProbability": 23,
+    "confidence": 77,
+    "diff": 23,
     "advice": "❌ 几乎无望，改日再来",
     "tags": [
       {
         "text": "极低",
         "highlight": false
-      },
-      {
-        "text": "双模型一致看差",
-        "highlight": false,
-        "consensus": true
       },
       {
         "text": "低云蔽山",
@@ -3785,87 +3780,34 @@
       "date": "2026-04-26",
       "sunrise": "06:48",
       "details": {
-        "cloudcover_low": 100,
-        "cloudcover_mid": 85,
-        "cloudcover_high": 99,
-        "precipitation": 0.4,
-        "relative_humidity_2m": 96,
-        "temperature_2m": 4.1,
-        "weather_code": 51,
-        "weather_desc": "毛毛雨"
+        "cloudcover_low": 99,
+        "cloudcover_mid": 88,
+        "cloudcover_high": 100,
+        "precipitation": 0.6,
+        "relative_humidity_2m": 94,
+        "temperature_2m": 3.8,
+        "weather_code": 53,
+        "weather_desc": "中度毛毛雨"
       }
     },
     "icon": {
       "date": "2026-04-26",
       "sunrise": "06:48",
       "details": {
-        "cloudcover_low": 72,
-        "cloudcover_mid": 62,
-        "cloudcover_high": 35,
-        "precipitation": 0.2,
-        "relative_humidity_2m": 89,
-        "temperature_2m": 4.4,
-        "weather_code": 61,
-        "weather_desc": "小雨"
+        "cloudcover_low": 38,
+        "cloudcover_mid": 0,
+        "cloudcover_high": 100,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 87,
+        "temperature_2m": 3.9,
+        "weather_code": 3,
+        "weather_desc": "阴天"
       }
     },
-    "saved_at": "2026-04-22T16:59:43.508464"
+    "saved_at": "2026-04-23T08:37:02.500441"
   },
   "2026-04-27": {
     "date": "2026-04-27",
-    "probability": 10,
-    "ecProbability": 10,
-    "iconProbability": 11,
-    "confidence": 99,
-    "diff": 1,
-    "advice": "❌ 几乎无望，改日再来",
-    "tags": [
-      {
-        "text": "极低",
-        "highlight": false
-      },
-      {
-        "text": "双模型一致看差",
-        "highlight": false,
-        "consensus": true
-      },
-      {
-        "text": "低云蔽山",
-        "highlight": false
-      }
-    ],
-    "ec": {
-      "date": "2026-04-27",
-      "sunrise": "06:47",
-      "details": {
-        "cloudcover_low": 68,
-        "cloudcover_mid": 43,
-        "cloudcover_high": 33,
-        "precipitation": 0.0,
-        "relative_humidity_2m": 89,
-        "temperature_2m": 3.1,
-        "weather_code": 3,
-        "weather_desc": "阴天"
-      }
-    },
-    "icon": {
-      "date": "2026-04-27",
-      "sunrise": "06:47",
-      "details": {
-        "cloudcover_low": 74,
-        "cloudcover_mid": 0,
-        "cloudcover_high": 65,
-        "precipitation": 0.0,
-        "relative_humidity_2m": 92,
-        "temperature_2m": 4.1,
-        "weather_code": 3,
-        "weather_desc": "阴天"
-      }
-    },
-    "saved_at": "2026-04-22T16:59:43.508466"
-  },
-  "2026-04-28": {
-    "date": "2026-04-28",
     "probability": 0,
     "ecProbability": 0,
     "iconProbability": 0,
@@ -3885,6 +3827,59 @@
       {
         "text": "低云蔽山",
         "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-27",
+      "sunrise": "06:47",
+      "details": {
+        "cloudcover_low": 100,
+        "cloudcover_mid": 93,
+        "cloudcover_high": 100,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 92,
+        "temperature_2m": 3.2,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "icon": {
+      "date": "2026-04-27",
+      "sunrise": "06:47",
+      "details": {
+        "cloudcover_low": 64,
+        "cloudcover_mid": 36,
+        "cloudcover_high": 100,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 91,
+        "temperature_2m": 4.6,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "saved_at": "2026-04-23T08:37:02.500447"
+  },
+  "2026-04-28": {
+    "date": "2026-04-28",
+    "probability": 5,
+    "ecProbability": 0,
+    "iconProbability": 10,
+    "confidence": 90,
+    "diff": 10,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      },
+      {
+        "text": "低云蔽山",
+        "highlight": false
       },
       {
         "text": "有降水",
@@ -3895,30 +3890,83 @@
       "date": "2026-04-28",
       "sunrise": "06:46",
       "details": {
-        "cloudcover_low": 100,
-        "cloudcover_mid": 100,
-        "cloudcover_high": 69,
-        "precipitation": 1.5,
-        "relative_humidity_2m": 94,
-        "temperature_2m": 5.0,
-        "weather_code": 61,
-        "weather_desc": "小雨"
+        "cloudcover_low": 88,
+        "cloudcover_mid": 88,
+        "cloudcover_high": 100,
+        "precipitation": 0.8,
+        "relative_humidity_2m": 90,
+        "temperature_2m": 5.8,
+        "weather_code": 53,
+        "weather_desc": "中度毛毛雨"
       }
     },
     "icon": {
       "date": "2026-04-28",
       "sunrise": "06:46",
       "details": {
-        "cloudcover_low": 97,
-        "cloudcover_mid": 97,
-        "cloudcover_high": 7,
-        "precipitation": 0.5,
-        "relative_humidity_2m": 91,
-        "temperature_2m": 4.8,
-        "weather_code": 61,
-        "weather_desc": "小雨"
+        "cloudcover_low": 68,
+        "cloudcover_mid": 39,
+        "cloudcover_high": 45,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 90,
+        "temperature_2m": 4.7,
+        "weather_code": 3,
+        "weather_desc": "阴天"
       }
     },
-    "saved_at": "2026-04-22T16:59:43.508468"
+    "saved_at": "2026-04-23T08:37:02.500452"
+  },
+  "2026-04-29": {
+    "date": "2026-04-29",
+    "probability": 5,
+    "ecProbability": 0,
+    "iconProbability": 10,
+    "confidence": 90,
+    "diff": 10,
+    "advice": "❌ 几乎无望，改日再来",
+    "tags": [
+      {
+        "text": "极低",
+        "highlight": false
+      },
+      {
+        "text": "双模型一致看差",
+        "highlight": false,
+        "consensus": true
+      },
+      {
+        "text": "有降水",
+        "highlight": false
+      }
+    ],
+    "ec": {
+      "date": "2026-04-29",
+      "sunrise": "06:46",
+      "details": {
+        "cloudcover_low": 37,
+        "cloudcover_mid": 83,
+        "cloudcover_high": 100,
+        "precipitation": 1.1,
+        "relative_humidity_2m": 97,
+        "temperature_2m": 1.9,
+        "weather_code": 73,
+        "weather_desc": "中雪"
+      }
+    },
+    "icon": {
+      "date": "2026-04-29",
+      "sunrise": "06:45",
+      "details": {
+        "cloudcover_low": 58,
+        "cloudcover_mid": 11,
+        "cloudcover_high": 78,
+        "precipitation": 0.0,
+        "relative_humidity_2m": 96,
+        "temperature_2m": 3.1,
+        "weather_code": 3,
+        "weather_desc": "阴天"
+      }
+    },
+    "saved_at": "2026-04-23T08:37:02.500456"
   }
 }
